@@ -1,0 +1,117 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CURD javascript
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dt1">
+    <table>
+        <tr>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Names   </th>
+                            <th>Email</th>
+                            <th>Class</th>
+                            <th>Year</th>
+                            <th>City</th>
+                            <th>Country</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </div>
+<br/>
+
+    <form class="form" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+
+        <div class="row">
+            <div class="col-md-4">
+              <label for="fname">Student ID</label>
+            </div>
+            <div class="col-md-8">
+              <input type="text" id="id" name="id">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+              <label for="fname">Student Name</label>
+            </div>
+            <div class="col-md-8">
+              <input type="text" id="name" name="name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+              <label for="fname">Email</label>
+            </div>
+            <div class="col-md-8">
+              <input type="email" id="email" name="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+              <label for="fname">Class</label>
+            </div>
+            <div class="col-md-8">
+              <input type="text" id="class" name="class">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+              <label for="fname">Employment Year</label>
+            </div>
+            <div class="col-md-8">
+              <input type="text" id="year" name="year">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+              <label for="fname">City</label>
+            </div>
+            <div class="col-md-8">
+              <input type="text" id="city" name="city">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+              <label for="fname">Country</label>
+            </div>
+            <div class="col-md-8">
+              <input type="text" id="country" name="country">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+
+            <div class="col-md-8">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+      
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

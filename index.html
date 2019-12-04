@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conatiner">
+
+      <form name="loginform" onSubmit="return validateForm();" action="home.html" method="post">
+
+        <div class="row">
+            <div class="col-md-4">
+              <label for="fname">User Name</label>
+            </div>
+            <div class="col-md-8">
+              <input type="text" name="usr" > 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+              <label for="fname">Password</label>
+            </div>
+            <div class="col-md-8">
+              <input type="password" name="pword"   >
+            </div>
+        </div>
+
+        <div class="row">
+              <div class="login">
+                  <input type="submit" value="Login">
+              </div>
+
+            <div class="reg">
+              <a href="register.html">Register</a> 
+            </div>
+        </div>
+      
+    </form>
+    </div>
+</body>
+
+
+<script>
+  function validateForm() {
+      var un = document.loginform.usr.value;
+      var pw = document.loginform.pword.value;
+      var username = "user@gmail.com"; 
+      var password = "123456.";
+      if ((un == username) && (pw == password)) {
+          return true;
+      }
+      else {
+          alert ("Login was unsuccessful, please check your username and password");
+          return false;
+      }
+}
+</script>
+</html>

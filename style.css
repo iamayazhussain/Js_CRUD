@@ -1,0 +1,75 @@
+body{
+    padding: 20px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+.form{
+    border-color: red;
+    border-style: ridge;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+
+table, th, td{
+    border-collapse: collapse;
+}
+.t1 th{
+    background-color: cyan;
+    color: red;
+    margin: 20px;
+    padding: 10px;
+}
+
+.dt1 {
+    border-color: green;
+    border-style: ridge;
+}
+
+
+.col-md-4 {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+}
+
+.col-md-8 {
+  float: left;
+  width: 85%;
+  margin-top: 6px;
+}
+
+.login {
+    float: right;
+    width: 85%;
+    margin-top: 6px;
+  }
+  
+  .reg {
+    float: right;
+    width: 85%;
+    margin-top: 6px;
+  }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+input[type=text], input[type=password]{
+    padding: 6px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+
+}
+
+.container{
+    padding: 90px;
+    align-content: center;
+}

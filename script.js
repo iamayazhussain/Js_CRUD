@@ -43,7 +43,7 @@ function insertNewRecord(data) {
     cell6.innerHTML = data.city;
 
     cell7 = newRow.insertCell(6);
-    cell7.innerHTML = data.city;
+    cell7.innerHTML = data.country;
 
 
     cell7 = newRow.insertCell(7);
